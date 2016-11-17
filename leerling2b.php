@@ -14,36 +14,72 @@ Klas en mentor: <input type="text" name="klas" value="klas"size="5" /> - <input 
 <body>
 <p> 1. Startsituatie </p>
 <ul>
-  <li>Woonplaats:<input type="text" name="woonplaats" /> <br/></li>
-  <li>Gezinssituatie:</li>
-  <li>Hobby’s:</li>
-  <li>Vrienden: </li>
-  <li>Medische informatie:</li>
-  <li> Beschrijf in drie zinnen hoe vorig schooljaar is verlopen:</li>
-  
-
+  <li>Wat zijn je hobby's? <input type="text" name="hobby's " /> <br/></li>
+  <li>Op welke sporten zit je? <input type="text" name="sporten" /> <br/></li>
+  <li>Heb je een bijbaantje?<input type="text" name="bijbaan" /> <br/></li>
+  <li>Heb je vrienden in de klas/school? <input type="text" name="vrienden" /> <br/></li>
+  <li>Hoe voel je je op school en in de klas?<input type="text" name="gevoel" /> <br/></li>
+  <li> Beschrijf in drie zinnen hoe vorig schooljaar is verlopen:<br/><input type="text" name="beschrijving" size="100" /> <br/></li>
 </ul>
  
-<p> 2. Competenties </p>
+<p> 2. Competenties </br>
+Wat kun je al? Wat worden je ontwikkelpunten? </p>
+<ul>
+<li><b>Cognitief </b></br>
+In welke vakken ben je goed? <input type="text" name="vakkengoed" /> </br>
+In welke vakken ben je minder goed? <input type="text" name="vakkenmindergoed" /></li>
+<li><b>Sociaal </b></br>
+Maak je makkelijk vrienden? <input type="checkbox" name="vriendenja" value="Ja">Ja <input type="checkbox" name="vriendennee" value="Nee">Nee </br>
+Durf je jezelf te presenteren? <input type="checkbox" name="presenterenja" value="Ja">Ja <input type="checkbox" name="presenterennee" value="Nee">Nee </br>
+Durf je voor jezelf op te komen?<input type="checkbox" name="opkomenja" value="Ja">Ja <input type="checkbox" name="opkomennee" value="Nee">Nee </br>
+In hoeverre stel je vragen aan je docent?<input type="checkbox" name="vragenja" value="Ja">Ja <input type="checkbox" name="vragennee" value="Nee">Nee </br>
+</li>
+<li><b>Studie </b> </br>
+Hoe is je werkhouding in de les? <input type="text" name="les " /></br>
+Hoe is je werkhouding tijdens het leren thuis? <input type="text" name="thuis" /></br>
+Hoe bereid jij je toetsen voor? <input type="text" name="voorbereiden" /> </li>
+</ul>
+<p> 3. Studievaardigheden </br>
+Achter ieder kopje beoordeel je jezelf met een cijfer van 1 tot 10. </p>
+<table>
+<tr>
+<th> Vaardigheid</th>
+<th> Cijfer</th>
+</tr>
+<tr>
+<td> Werktempo in de les </td><td> </td></tr>
+<tr><td>Plannen </td> <td></td></tr>
+<tr><td>Spullen op orde</td> <td></td></tr>
+<tr><td>Vragen stellen aan de docent</td> <td></td></tr>
+<tr><td>Maakwerk</td> <td></td></tr>
+<tr><td>Leerwerk</td> <td></td></tr>
+<tr><td>Initiatief tonen</td> <td></td></tr>
+<tr><td>Samenwerken</td> <td></td></tr>
+<tr><td>Communicatie met docent</td> <td></td></tr>
+<tr><td>Communicatie met mentor</td> <td></td></tr>
+<tr><td>Communicatie met medeleerlingen</td> <td></td></tr>
+<tr><td>Concentratie in de les</td> <td></td></tr>
+<tr><td>Concentratie thuis</td> <td></td></tr>
+<tr><td>Presenteren</td> <td></td></tr>
+</table>
 
-<p> 3. Persoonlijke eigenschappen </p>
+<p> 4. Inzet  </p>
 
-<p> 4. Studievaardigheden  </p>
+<p> 5. Persoonlijke kenmerken</p>
+<p> 6. Leerstijlen </p>
 
-<p> 5. Denkvoorkeuren  </p>
+<p> 7.  Denkvoorkeuren  </p>
 
-<p> 6. Persoonlijke kenmerken </p>
+<p> 8. Leerjaar gebonden:  </p>
 
-<p> 7. Leerjaar gebonden:  </p>
-
-<p> 8. Doelen korte termijn  </p>
+<p> 9. Doelen korte termijn  </p>
 <p> a) Cognitieve vaardigheden  </p>
 <p> b) Sociale vaardigheden </p>
 <p> c) Studievaardigheden </p>
-<p> 9. Feedback van je docenten  </p>
+<p> 10. Feedback van je docenten  </p>
 
-<p> 10. Feedback van leerling  </p>
- <p> 11. Doel lange termijn  </p>
+<p> 11. Feedback van leerling  </p>
+ <p> 12. Doel lange termijn  </p>
 <p> </p>
 
 </body>
