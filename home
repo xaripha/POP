@@ -1,0 +1,53 @@
+<?phpif(isset($_POST["log_in"]))
+{
+// Hier wordt connectie gemaakt met de database
+include "sessie.php";
+$resultaat = mysqli_query($mysql,$sql )or die("Fout: er is een fout in de query ".mysqli_error($mysql));
+// Verbinding weer sluiten
+mysqli_close($mysql) or die("Het verbreken van de verbinding met de MySQL-server is mislukt!");
+
+list($gebruiker,$voornaam,$achternaam) = mysqli_fetch_row($resultaat);
+
+if(mysqli_num_rows($resultaat)){
+	if("isAdmin=1"){
+?>
+<html>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</html>
+<?php
+echo $sql};
+elseif("isMentor=1"){
+?>
+<html>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</html>
+<?php 
+echo $sql;}
+	
+	
+
+else{
+
+	echo " incorrect wachtwoord of gebruikersnaam ";
+}
+
+}
+
+?>
+<html>
+<head> 
+<title>home</title>
+ </head>
+<body>
+</body>
+</html>
