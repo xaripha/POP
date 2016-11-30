@@ -9,6 +9,6 @@
 
 	while(list($voornaam,$tussenvoegsel,$achternaam) = mysqli_fetch_row($resultaat))   
 {     
- echo"$voornaam,$achternaam <br />";   
+ echo"$voornaam, $tussenvoegsel, $achternaam <br />";   
 }
 	
