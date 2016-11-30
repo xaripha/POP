@@ -7,8 +7,8 @@
 		
 	mysqli_close($mysql) or die("Het verbreken van de verbinding met de MySQL-server is mislukt!"); 
 
-	while(list($voornaam,$tussenvoegsel,$achternaam) = mysqli_fetch_row($resultaat))   
+	while(list($gebruikers_id,$voornaam,$tussenvoegsel,$achternaam) = mysqli_fetch_row($resultaat))   
 {     
- echo"$voornaam, $tussenvoegsel, $achternaam <br />";   
+ echo"$gebruikers_id,$voornaam,$tussenvoegsel,$achternaam <br />";   
 } 
 	
