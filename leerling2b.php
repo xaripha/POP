@@ -12,7 +12,7 @@
 <p id="p1">  Op weg naar later: Wat kan ik? Wat wil ik? Wat moet ik?  </p>
 
 <table id="t1">
-<tr><td>Naam leerling: <input type="text" name="voornaam" /> </td><td>Schooljaar: <input type="number" name="schooljaar1" min="2016" size="4" /> - <input type="number" name="schooljaar2" min="2016" size="4" /></td></tr>
+<tr><td>Naam leerling: <input type="text" name="naam" /> </td><td>Schooljaar: <input type="number" name="schooljaar1" min="2016" size="4" /> - <input type="number" name="schooljaar2" min="2016" size="4" /></td></tr>
 <tr><td>Geboortedatum:   <input type="date" name="geboortedatum"  min="1916-01-01" max="2016-11-10" ></td> <td>Klas en mentor: <input type="text" name="klas" value="klas"size="5" /> - <input type="text" name="mentor" value="mentor" size="4" /> </td></tr>
 </table></head>
 </br>
