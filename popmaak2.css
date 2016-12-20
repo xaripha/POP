@@ -1,0 +1,161 @@
+body {
+    background: linear-gradient(to bottom right,#ffe6f2,#ff99cc);
+	margin-top: 70px;
+	margin-left: 100px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 28px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+	
+li a {
+    display: inline-block;
+    width: 60px;
+}
+
+
+
+p#pt{
+font-size: 20px;
+ font-weight: bold;
+}
+p#p1{
+font-size: 18px;
+font-style: italic;
+}
+
+p#p2{
+font-size: 19px;
+}
+
+p#p3{
+font-size: 20px;
+font-style: bold;
+}
+p#title{
+font-size: 30px;
+}
+
+table#t1{
+	background-color: none;
+}
+
+table#t3{
+ margin: 3px;
+    padding: 0;
+}
+
+table#t6, table#t7, {
+	background-color: #f0eeef;
+	
+    
+	text-align: center;
+	
+  
+}
+ 
+
+img#imginzet{
+ display: block;
+    margin: auto;
+    width: 50%;
+	float: right;
+	margin: -4.6em 18em 0em 0.1em; 
+	border: 1px solid #999; 
+	clear: center;
+}
+
+ tr#extreem{
+ background-color: #E74C3C;
+ }
+ 
+ tr#geweldig{
+ background-color: #F8C471  ;
+ }
+ tr#prima{
+ background-color: #FFFF00;
+ }
+ tr#goed{
+ background-color: #82E0AA;
+ }
+ tr#beetje{
+ background-color: #85C1E9;
+ }
+ tr#kleinbeetje{
+ background-color: #2E86C1;
+ }
+ tr#geen{
+ background-color: #BB8FCE;
+ }
+
+
+
+
+
+img#imgpk{
+ border-radius: 50%;
+}
+
+
+input[type=select], input[type=text]{
+    background-color: none;
+   border: 0.3px solid grey;
+    border-radius: 2px;
+}
+
+th {
+	background-color: #ff9cce;
+	border-collapse: collapse;
+}
+
+input[type=submit]{
+     background-color: black;
+    border: none;
+    color: #ffe6f2;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	
+}
+
+input[type=text] {
+     
+    padding: 2px 2px;
+    margin: 0.3px 0;
+    box-sizing: border-box;
+}
+a:link {
+    
+background-color: white;
+    color: black;
+    padding: 12px 20px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+	border: 2px solid black;
+	margin-left: 40px;
+	margin-top: 15px;
+	}
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: black;
+
+
+.lynn {
+input[type=text]{
+border: none;
+    border-bottom: 2px solid red;
+
+}
