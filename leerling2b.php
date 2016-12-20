@@ -1,5 +1,5 @@
 <head>
-<link rel="stylesheet" type="text/css" href="popmaak.css">
+<link rel="stylesheet" type="text/css" href="popmaak2.css">
 </head>
  <form method="post">
  <head>
@@ -8,16 +8,16 @@
 
  </style>
   <title> POP </title> 
- Formulier POP Persoonlijk Ontwikkelingsplan 
-<p>  Op weg naar later: Wat kan ik? Wat wil ik? Wat moet ik?  </p>
- 
-<table name="t1">
-<tr><td>Naam leerling: <input type="text" name="voornaam" /> </td><td>Schooljaar: <input type="number" name="schooljaar1" min="2016" "size="4" /> - <input type="number" name="schooljaar2" min="2016" size="4" /></td></tr>
+ <p id="title"> Formulier POP Persoonlijk Ontwikkelingsplan </p> 
+<p id="p1">  Op weg naar later: Wat kan ik? Wat wil ik? Wat moet ik?  </p>
+
+<table id="t1">
+<tr><td>Naam leerling: <input type="text" name="voornaam" /> </td><td>Schooljaar: <input type="number" name="schooljaar1" min="2016" size="4" /> - <input type="number" name="schooljaar2" min="2016" size="4" /></td></tr>
 <tr><td>Geboortedatum:   <input type="date" name="geboortedatum"  min="1916-01-01" max="2016-11-10" ></td> <td>Klas en mentor: <input type="text" name="klas" value="klas"size="5" /> - <input type="text" name="mentor" value="mentor" size="4" /> </td></tr>
 </table></head>
-
+</br>
 <body>
-<p> 1. Startsituatie
+<p id="pt"> 1. Startsituatie
 <table>
   <tr><td><li>Wat zijn je hobby's? </td><td><input type="text" size="40" name="hobby's " /> </li></td> </tr><br/>
   <tr><td><li>Op welke sporten zit je?</td> <td><input type="text" size="40" name="sporten" /> <br/></li></td></tr>
@@ -27,10 +27,10 @@
  <tr><td> <li> Beschrijf in drie zinnen hoe vorig schooljaar is verlopen:</td><br><td><textarea name="message" rows="5" cols="42"></textarea></li></td></tr>
 </table></p>
  
-<p> 2. Competenties </br>
-Wat kun je al? Wat worden je ontwikkelpunten? </p>
+<p id="pt"> 2. Competenties </p>
+<p id="p1"> Wat kun je al? Wat worden je ontwikkelpunten? </p>
 <ul>
-<table>
+<table id="t3">
 <tr><li><th>Cognitief</th></li></tr>
 <tr><td>In welke vakken ben je goed?</td> <td><input type="text" name="vakkengoed" /> </td></tr>
 <tr><td>In welke vakken ben je minder goed?</td> <td><input type="text" name="vakkenmindergoed" /></td></tr>
@@ -48,8 +48,8 @@ Wat kun je al? Wat worden je ontwikkelpunten? </p>
 </ul>
 
 
-<p> 3. Studievaardigheden </br>
-Achter ieder kopje beoordeel je jezelf met een cijfer van 1 tot 10. </p>
+<p id="pt"> 3. Studievaardigheden </br></p>
+<p id="p1">Achter ieder kopje beoordeel je jezelf met een cijfer van 1 tot 10. </p>
 <table>
 <tr>
 <th> Vaardigheid</th>
@@ -90,44 +90,44 @@ Achter ieder kopje beoordeel je jezelf met een cijfer van 1 tot 10. </p>
   <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select></td></tr>
 </table>
 
-<p> 4. Inzet   </br>
-Ga al je vakken na en plaats ze vervolgens in de inzetmeter.</p> 
-<img src="inzetmeter.jpg" alt="inzetmeter" style="width:300px;height:400px;" > <br/>
-<table id="t5">
+<p id="pt"> 4. Inzet   </p>
+<p id="p1">Ga al je vakken na en plaats ze vervolgens in de inzetmeter.</p> 
+<img id="imginzet" src="inzetmeter.jpg" alt="inzetmeter" style="width:300px;height:400px;" > 
+<p id="p2" ><table id="t5">
 <tr><th> Inzet: </th> <th> Vakken:</th> </tr>
-<tr><td>Extreme inzet: <br/> </td>  <td><input type="text" name="extreem" /><br/> </td></tr>
-<tr><td>Geweldige inzet: <br/> </td> <td><input type="text" name="geweldig" /><br/></td></tr>
-<tr><td>Prima inzet: <br/></td><td><input type="text" name="prima" /><br/></td></tr>
-<tr><td>Goede inzet:<br/></td><td><input type="text" name="goed" /><br/></td></tr>
-<tr><td>Een beetje inzet:<br/></td><td><input type="text" name="beetje" /><br/></td></tr>
-<tr><td>Een klein beetje inzet: <br/></td><td><input type="text" name="klein" /><br/></td></tr>
-<tr><td>Geen inzet: <br/></td><td><input type="text" name="geen" /><br/></td></tr>
+<tr id="extreem"><td>Extreme inzet: <br/> </td>  <td><input type="text" name="extreem" /><br/> </td></tr>
+<tr id="geweldig"><td>Geweldige inzet: <br/> </td> <td><input type="text" name="geweldig" /><br/></td></tr>
+<tr id="prima"><td>Prima inzet: <br/></td><td><input type="text" name="prima" /><br/></td></tr>
+<tr id="goed"><td>Goede inzet:<br/></td><td><input type="text" name="goed" /><br/></td></tr>
+<tr id="beetje"><td>Een beetje inzet:<br/></td><td><input type="text" name="beetje" /><br/></td></tr>
+<tr id="kleinbeetje"><td>Een klein beetje inzet: <br/></td><td><input type="text" name="klein" /><br/></td></tr>
+<tr id="geen"><td>Geen inzet: <br/></td><td><input type="text" name="geen" /><br/></td></tr> </p>
 </table>
-<p> 5. Persoonlijke kenmerken</p>
-<img src="kenmerken.jpg" alt="inzetmeter" style="width:280px;height:278px;" ></br>
-Kies welke kleur het beste bij je past:</br><input type="radio" name="gender" value="Blauw">Blauw
+<p id="pt"> 5. Persoonlijke kenmerken</p>
+<img id="imgpk" src="kenmerken.jpg" alt="inzetmeter" style="width:248px;height:246px;" ></br>
+<p id="p2">Kies welke kleur het beste bij je past:</br><input type="radio" name="gender" value="Blauw">Blauw
 <input type="radio" name="gender" value="Rood">Rood
 <input type="radio" name="gender" value="Groen">Groen<input type="radio" name="gender" value="Geel">Geel</br>
 Licht je keuze toe: </br>
-<textarea name="message" rows="4" cols="50"></textarea> </br>
-<p> 6. Leerstijlen </p>
-Welke leerstijl heb jij?
-In totaal zijn er vier leerstijlen, dat wil zeggen 4 manieren waarop je dingen kunt leren.</br> 
+<textarea name="message" rows="4" cols="50"></textarea> </br> </p>
+<p id="pt"> 6. Leerstijlen </p>
+<p id="p1">Welke leerstijl heb jij?</p>
+<p id="p2">In totaal zijn er vier leerstijlen, dat wil zeggen 4 manieren waarop je dingen kunt leren.</br> 
 Afhankelijk van de leerstof en de situatie gebruik je een bepaalde leerstijl. </br>
 
-Ga naar deze site voor de test: https://www.123test.nl/leerstijl/ 
-</br></br>
-Wat is het resultaat?</br>
+Klik op de button voor de site met de test <a href="https://www.123test.nl/leerstijl/ " target="_blank">Button</a>  </p>
+
+<p id="p2">Wat is het resultaat? </br>
 Het resultaat is <input type="text" name="leerstijl" size="60" />
 </br> In hoeverre had je dit verwacht?</br>
-<textarea name="message" rows="4" cols="50"></textarea> </br></br>
+<textarea name="message" rows="4" cols="60"></textarea> </p>
 
-
-<p> 7.  Denkvoorkeuren  </br>
-Als je weet wat voor jou je denkvoorkeur is, dan kun je dit gebruiken bij jouw manier van leren. </br>
-Lees de drie denkvoorkeuren door en kies de denkvoorkeur die volgens jou het meest bij jou past.</p>
- </br>
-
+</br>
+<p id="pt"> 7.  Denkvoorkeuren  </p>
+<p id="p1">Als je weet wat voor jou je denkvoorkeur is, dan kun je dit gebruiken bij jouw manier van leren. </br>
+Lees de drie denkvoorkeuren door en tik de boxjes aan die volgens jou het meest bij jou passen.</p>
+ 
+<p id="p2">
 <table id="t6"> <caption> <li>Analytisch Denken</li></caption>
 <tr><th>Communicatie</th><th>Proces (tijdens het werk)</th><th>Product</th></tr>
 <tr><td><input type="checkbox" value="kritisch">is kritisch</td><td><input type="checkbox" value="overzicht">houdt overzicht: eerst dit, dan dat nog </td> <td><input type="checkbox" value="formulerenh">goed geformuleerd</td></tr>
@@ -148,27 +148,28 @@ Lees de drie denkvoorkeuren door en kies de denkvoorkeur die volgens jou het mee
 </br>
 <table id="t6"> <caption> <li>Creatief Denken</li></caption>
 <tr><th>Communicatie</th><th>Proces (tijdens het werk)</th><th>Product</th></tr>
-<tr><td><input type="checkbox" value="ideeën">komt met nieuwe ideeën</td><td><input type="checkbox" value="verbeelding">gebruikt verbeelding</td> <td><input type="checkbox" value="beeldend">beeldend geformuleerd en/of rijk geïllustreerd</td></tr>
+<tr><td><input type="checkbox" value="ideeën">komt met nieuwe idee&#235;n</td><td><input type="checkbox" value="verbeelding">gebruikt verbeelding</td> <td><input type="checkbox" value="beeldend">beeldend geformuleerd en/of rijk ge&iuml;llustreerd</td></tr>
 <tr><td><input type="checkbox" value="beelden">denkt in beelden (geeft goede vergelijkingen)</td><td><input type="checkbox" value="geheel">voegt heel verschillende soorten informatie samen tot geheel</td> <td><input type="checkbox" value="onverwachte">onverwachte verbanden tussen elementen/materialen</td></tr>
 <tr><td><input type="checkbox" value="legt">legt verbanden tussen heel verschillende onderwerpen</td><td><input type="checkbox" value="ongewoon">komt tot ongewone uitkomsten, oplossingen of inzichten </td> <td> <input type="checkbox" value="eigenzinnig">toont nieuwe / eigenzinnige kijk op het onderwerp</td></tr>
 <tr><td><input type="checkbox" value="meedenken">kan goed meedenken met anderen/leeft zich in</td><td><input type="checkbox" value="kijk">heeft een ongewone kijk op problemen </td> <td></td></tr>
 <tr><td><input type="checkbox" value="details">let op details (inhoud) die anderen niet opvallen </td><td><input type="checkbox" value="implusief">werkt impulsief / lijkt chaotisch </td> <td></td></tr>
-</table></br>
-Wat is jouw denkvoorkeur?</br>
+</table></p>
+<p id="p2">De tabel waar je de meeste vinkjes hebt gezet is jouw denkvoorkeur.</br> Wat is jouw denkvoorkeur?</br>
 <input type="radio" name="gender" value="analytisch" checked> Analytisch denken<br>
 <input type="radio" name="gender" value="pragmatisch"> Pragmatisch denken<br>
-<input type="radio" name="gender" value="creatief"> Creatief denken </br></br>
-Licht je keuze toe: <textarea name="message" rows="4" cols="50"></textarea> 
+<input type="radio" name="gender" value="creatief"> Creatief denken </br>
+Licht je keuze toe: <textarea name="message" rows="4" cols="50"></textarea> </p>
+</br>
+<p id="pt"> 8. Leerjaar gebonden: </p>
 
-<p> 8. Leerjaar gebonden: 
-</br> (Bijvoorbeeld 3e klas profielkeuze, 4e/5e klas vervolgopleiding, toekomst)
-</br> <textarea name="message" rows="4" cols="50"></textarea>
- </p>
+<p id="p1"> Wat verwacht je van dit schooljaar? </br>(Bijvoorbeeld 3e klas profielkeuze, 4e/5e klas vervolgopleiding, toekomst)
+</br> </br> <textarea name="message" rows="4" cols="50"></textarea>
+ </p> </br>
 
-<p> 9. Doelen op korte termijn 
-</br> Wat wil ik leren om mijn doel te bereiken en wat en wie heb ik nodig? </p>
-<p> a) Cognitieve vaardigheden 
-</br> Noteer wat je cijfers nu zijn en vervolgens wat je graag zou willen behalen. </br>
+<p id="pt"> 9. Doelen op korte termijn </p>
+<p id="p1"> Wat wil ik leren om mijn doel te bereiken en wat en wie heb ik nodig? </p>
+<p id="p2"> a) Cognitieve vaardigheden </p>
+<p id="p3"> Noteer wat je cijfers nu zijn en vervolgens wat je graag zou willen behalen. </br>
 Hoe ga je dit voor elkaar krijgen en wat heb je daarvoor nodig? </p>
 <table id="t7">
 <tr><th>Vak</th><th>Nederlands</th><th>Engels</th><th><select><option value="-Kies je vak-">-Kies je vak-</option><option value="Frans">Frans</option><option value="Duits">Duits</option><option value="Latijn">Latijn</option><option value="Grieks">Grieks</option><option value="Wiskunde(A,B,C)">Wiskunde (A, B, C)</option>
@@ -182,8 +183,8 @@ Hoe ga je dit voor elkaar krijgen en wat heb je daarvoor nodig? </p>
   <option value="Wiskunde D">Wiskunde D</option><option value="Informatica">Informatica</option><option value="Aardrijkskunde">Aardrijkskunde</option><option value="Geschiedenis">Geschiedenis</option><option value="Biologie">Biologie</option><option value="Scheikunde">Scheikunde</option><option value="Natuurkunde">Natuurkunde</option><option value="Economie">Economie<option value="M&O">M&O </option><option value="Kunst">Kunst</option><option value="BSM">BSM</select> </th></tr>
 <tr><td>Cijfer (Momenteel)</td> <td><input type="text" name="cijfernu" size="3" /></td><td><input type="text" name="cijfernu" size="3" /></td><td><input type="text" name="cijfernu" size="3" /></td><td><input type="text" name="cijfernu" size="3" /></td><td><input type="text" name="cijfernu" size="3" /></td><td><input type="text" name="cijfernu" size="3" /></td><td><input type="text" name="cijfernu" size="3" /></td><td><input type="text" name="cijfernu" size="3" /></td><td><input type="text" name="cijfernu" size="3" /></td><td><input type="text" name="cijfernu" size="3" /></td></tr>
 <tr><td>Cijfer (Doel)</td> <td><input type="text" name="cijferdoel" size="3" /></td><td><input type="text" name="cijferdoel" size="3" /></td><td><input type="text" name="cijferdoel" size="3" /></td><td><input type="text" name="cijferdoel" size="3" /></td><td><input type="text" name="cijferdoel" size="3" /></td><td><input type="text" name="cijferdoel" size="3" /></td><td><input type="text" name="cijferdoel" size="3" /></td><td><input type="text" name="cijferdoel" size="3" /></td><td><input type="text" name="cijferdoel" size="3" /></td><td><input type="text" name="cijferdoel" size="3" /></td></tr></table>  
-</br></br>
-Beschrijf hieronder de drie vakken die momenteel voor jouw cijferlijst de prioriteit hebben. </br></br>
+
+<p id="p2">Beschrijf hieronder de drie vakken die momenteel voor jouw cijferlijst de prioriteit hebben. </p>
 <table>
 <tr><th><li>Vak 1:</li></th><th><select><option value="-Kies je vak-">-Kies je vak-</option><option value="Nederlands">Nederlands</option><option value="Engels">Engels</option><option value="Frans">Frans</option><option value="Duits">Duits</option><option value="Latijn">Latijn</option><option value="Grieks">Grieks</option><option value="Wiskunde(A,B,C)">Wiskunde (A, B, C)</option>
   <option value="Wiskunde D">Wiskunde D</option><option value="Informatica">Informatica</option><option value="Aardrijkskunde">Aardrijkskunde</option><option value="Geschiedenis">Geschiedenis</option><option value="Biologie">Biologie</option><option value="Scheikunde">Scheikunde</option><option value="Natuurkunde">Natuurkunde</option><option value="Economie">Economie<option value="M&O">M&O </option><option value="Kunst">Kunst</option><option value="BSM">BSM</select> </th></tr>
@@ -213,17 +214,17 @@ Beschrijf hieronder de drie vakken die momenteel voor jouw cijferlijst de priori
 <tr><td>Wie gaat mij hierbij helpen?</td><td><input type="text" name="helpen" size="50" /></td></tr>
 <tr><td>In welk tijdspad ga ik dit voor elkaar krijgen?</td><td><input type="text" name="tijdspad" size="50" /></td></tr>
 </table> 
-</br></br>
+</br>
 
-<p> b) Sociale vaardigheden </br> Kies een sociale vaardigheid die je zou willen verbeteren </p>
+<p id="p3"> b) Sociale vaardigheden </p3> <p id="p2">Kies een sociale vaardigheid die je zou willen verbeteren </p>
 <table>
 <tr><th><li>Sociale vaardigheid:</li></th><th><input type="text" name="socialevaardigheid" size="20" /></th></tr>
 <tr><td>Wat wil ik bereiken?</td><td><input type="text" name="bereiken" size="50" /></td></tr>
 <tr><td>Hoe ga ik eraan werken?</td><td><input type="text" name="werken" size="50" /></td></tr>
 <tr><td>Wie gaat mij hierbij helpen?</td><td><input type="text" name="helpen" size="50" /></td></tr>
 <tr><td>In welk tijdspad ga ik dit voor elkaar krijgen?</td><td><input type="text" name="tijdspad" size="50" /></td></tr>
-</table></br></br>
-<p> c) Studievaardigheden </p>
+</table>
+<p id="p3"> c) Studievaardigheden </p>
 <table>
 <tr><th><li>Studievaardigheid:</li></th><th><input type="text" name="studievaardigheid" size="20" /></th></tr>
 <tr><td>Wat wil ik bereiken?</td><td><input type="text" name="bereiken" size="50" /></td></tr>
@@ -232,9 +233,9 @@ Beschrijf hieronder de drie vakken die momenteel voor jouw cijferlijst de priori
 <tr><td>In welk tijdspad ga ik dit voor elkaar krijgen?</td><td><input type="text" name="tijdspad" size="50" /></td></tr>
 </table>
 </br></br>
- <p> 10. Doel op lange termijn  
- </br> Wat wil je over tien jaar bereikt hebben?
- </br><textarea name="message" rows="6" cols="80"></textarea></p>
+ <p id="pt"> 10. Doel op lange termijn  </p>
+ <p id="p1"> Wat wil je over tien jaar bereikt hebben?
+ </br><textarea name="message" rows="8" cols="80"></textarea></p>
  
   
 <p> </p>
