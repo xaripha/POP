@@ -19,7 +19,7 @@
 <body>
 <p id="pt"> 1. Startsituatie
 <table>
-  <tr><td><li>Wat zijn je hobby's? </td><td><input type="text" size="40" name="hobby's " /> </li></td> </tr><br/>
+  <tr><td><li>Wat zijn je hobby's? </td><td><input type="text" size="40" name="hobbys " /> </li></td> </tr><br/>
   <tr><td><li>Op welke sporten zit je?</td> <td><input type="text" size="40" name="sporten" /> <br/></li></td></tr>
   <tr><td><li>Heb je een bijbaantje?</td><td><input type="text" size="40" name="bijbaan" /> <br/></li></td></tr>
   <tr><td><li>Heb je vrienden in de klas/school?</td><td><input type="text" size="40" name="vrienden" /> <br/></li></td></tr>
