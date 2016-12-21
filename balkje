@@ -1,4 +1,0 @@
-<form method="post">
-Datum <input type="number" name="dag" placeholder="dag"/> - <input type="number" name="maand" placeholder="maand"/> - <input type="number" name="jaar" placeholder="jaar"/>
-<input type="submit" value="verstuur" />
-</form>
