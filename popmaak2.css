@@ -10,15 +10,36 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+	 width: 300px;
+    background-color: #f1f1f1;
 }
 	
 li a {
-    display: inline-block;
-    width: 60px;
+    display: block;
+     color: #000;
+    padding: 4px 8px;
+    text-decoration: none;
+
 }
 
+li a:hover {
+    background-color: #555;
+    color: white;
+}
 
+img#imginzet{
+ display: block;
+    margin: auto;
+    width: 50%;
+	float: right;
+	margin: -4.6em 18.5em 0em 0.1em; 
+	border: 1px solid #999; 
+	clear: center;
+}
 
+img#imgpk{
+ border-radius: 50%;
+}
 p#pt{
 font-size: 20px;
  font-weight: bold;
@@ -51,53 +72,9 @@ table#t3{
 
 table#t6, table#t7, {
 	background-color: #f0eeef;
-	
-    
+	border-style: ridge;
+    border-width: 1px;
 	text-align: center;
-	
-  
-}
- 
-
-img#imginzet{
- display: block;
-    margin: auto;
-    width: 50%;
-	float: right;
-	margin: -4.6em 18em 0em 0.1em; 
-	border: 1px solid #999; 
-	clear: center;
-}
-
- tr#extreem{
- background-color: #E74C3C;
- }
- 
- tr#geweldig{
- background-color: #F8C471  ;
- }
- tr#prima{
- background-color: #FFFF00;
- }
- tr#goed{
- background-color: #82E0AA;
- }
- tr#beetje{
- background-color: #85C1E9;
- }
- tr#kleinbeetje{
- background-color: #2E86C1;
- }
- tr#geen{
- background-color: #BB8FCE;
- }
-
-
-
-
-
-img#imgpk{
- border-radius: 50%;
 }
 
 
