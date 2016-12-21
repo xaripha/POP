@@ -14,11 +14,11 @@ $mentor = mysqli_real_escape_string($mysql,$_POST["voornaamM"]);
  
 
 
-// Hier wordt de prijs gewijzigd in de database
+// Hier wordt de mentor gewijzigt  gewijzigd in de database
 mysqli_query($mysql,"UPDATE gebruikers SET mentor = '$mentor' WHERE gebruiker_id = '$gebruikers'") or die("De updatequery op de database is mislukt!");	
 }
 
-// Artikelen opvragen uit de database
+// Artikelen opvragen uit de database en controle of het om leerling gaat
 $resultaat = mysqli_query($mysql,"SELECT * FROM gebruikers where isLeerling=1") or die("De query op de database is mislukt!");
 $resultaat1 = mysqli_query($mysql,"SELECT gebruiker_id, voornaam FROM gebruikers where isMentor=1") or die(mysqli_error($mysql));
 // Verbinding weer sluiten
@@ -42,7 +42,7 @@ echo"<option value='$gebruiker_id'>$voornaam $tussenvoegsel $achternaam $geboort
 </select><br /><br />
 vul de mentor in: <select name="voornaamM">  
 <?php
-// Hier worden alle verschillende categoriën uit de database getoond in de keuzelijst
+// Hier worden alle verschillende mentoren uit de database getoond in de keuzelijst
 while(list($gebruiker_id,$voornaamM) = mysqli_fetch_row($resultaat1))
 {
 echo"<option value='$gebruiker_id'>$voornaamM</option>";

@@ -10,41 +10,36 @@ if(isset($_POST["verzend"]))
 {
 // Hier worden de ingevulde gegevens veilig opgehaald uit het formulier
 $gebruikers = mysqli_real_escape_string($mysql,$_POST["gebruikers"]);	
-$gebruiker = mysqli_real_escape_string($mysql,$_POST["gebruiker"]);
-$geboortedatum = mysqli_real_escape_string($mysql,$_POST["geboortedatum"]);
 $wachtwoord = mysqli_real_escape_string($mysql,$_POST["wachtwoord"]);
 
-// Hier worden de leerling gegevens gewijzigd in de database
-mysqli_query($mysql,"UPDATE gebruikers SET gebruiker = '$gebruiker' WHERE gebruiker_id = '$gebruikers'") or die("De updatequery op de database is mislukt!");	
-mysqli_query($mysql,"UPDATE gebruikers SET geboortedatum = '$geboortedatum' WHERE gebruiker_id = '$gebruikers'") or die("De updatequery op de database is mislukt!");
+// Hier wordt het wachtwoord gewijzigd in de database
 mysqli_query($mysql,"UPDATE gebruikers SET wachtwoord = '$wachtwoord' WHERE gebruiker_id = '$gebruikers'") or die("De updatequery op de database is mislukt!");
 
 }
 
-// Artikelen opvragen uit de database
-$resultaat = mysqli_query($mysql,"SELECT * FROM gebruikers where isLeerling=1 and mentor={$_SESSION["gebruiker_id"]}") or die("De query op de database is mislukt!");
+// mensne opvragen uit de database
+$resultaat = mysqli_query($mysql,"SELECT * FROM gebruikers where gebruiker_id= {$_SESSION["gebruiker_id"]}") or die("De query op de database is mislukt!");
 // Verbinding weer sluiten
 mysqli_close($mysql) or die("Het verbreken van de verbinding met de MySQL-server is mislukt!");
 ?>
 
 <html>
 <head>
-<title>leerling_details_wijzigen</title>
+<title>wachtwoord wijzigen</title>
 </head>
 <body>
-<form action="leerling-details-wijzigen.php" method="post">
+<form action="ww.php" method="post">
 Kies een gebruiker: <select name="gebruikers">
 <?php
-// Hier worden alle personen  uit de database getoond in de keuzelijst indien ze in de klas van de ingelogde mentor zitten 
+// Hier worden alle artikelen uit de database getoond in de keuzelijst in dit geval alleen je zelf 
 while(list($gebruiker_id,$voornaam,$tussenvoegsel,$achternaam,$geboortedatum,$gebruiker,$wachtwoord,$isAdmin,$actief,$mentor) = mysqli_fetch_row($resultaat))
 {
 echo"<option value='$gebruiker_id'>$voornaam $tussenvoegsel $achternaam $geboortedatum $gebruiker $wachtwoord $isMentor $isLeerling $isAdmin $actief $mentor </option>";
 }
 ?> 
 </select><br /><br />
-Vul de nieuwe leerling details in: <br /><br />
-wat is nieuweleerling nummer <input type="text" name="gebruiker" /><br /><br />
-wat is de geboortedatum <input type="text" name="geboortedatum" /><br /><br />
+Vul het nieuwe wachtwoord details in: <br /><br />
+
 wat is het nieuwe wachtwoord <input type="text" name="wachtwoord"/><br / ><br />
 <input type="submit" name="verzend" value="Verzend" />
 </form>

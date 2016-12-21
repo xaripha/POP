@@ -11,13 +11,13 @@ if(isset($_POST["verzend"]))
 // Hier worden de ingevulde gegevens veilig opgehaald uit het formulier
 $pop = mysqli_real_escape_string($mysql,$_POST["pop"]);	
 
-// Hier wordt het artikel verwijderd uit de database
+// Hier wordt de pop verwijderd uit de database
 mysqli_query($mysql,"DELETE FROM pop WHERE pop_id = '$pop'") or die("De deletequery op de database is mislukt!");	
 }
 
-// Artikelen opvragen uit de database
+// Artikelen opvragen uit de database, indien de gebruiker de maker is van de POP
 $resultaat = mysqli_query($mysql,"SELECT * FROM pop P, invoer I, gebruiker G 
-where P.pop_id=I.pop_id and G.geruiker_id = I.gebruiker_id and G.mentor={$_SESSION["gebruiker_id"]}  ") or die("De query op de database is mislukt!");
+where P.pop_id=I.pop_id and G.geruiker_id = I.gebruiker_id and G.gebruiker_id={$_SESSION["gebruiker_id"]}  ") or die("De query op de database is mislukt!");
 
 // Verbinding weer sluiten
 mysqli_close($mysql) or die("Het verbreken van de verbinding met de MySQL-server is mislukt!");
@@ -31,7 +31,7 @@ mysqli_close($mysql) or die("Het verbreken van de verbinding met de MySQL-server
 <form action="delete.php" method="post">
 Kies een pop: <select name="pop">
 <?php
-// Hier worden alle artikelen uit de database getoond in de keuzelijst
+// Hier worden alle POPs van de maker uit de database getoond in de keuzelijst
 while(list($pop_id,$hobbys,$hobbys_tijdsduur,$werk,$Werk_tijdsduur,$vrienden,$huiswerktijd,$vorig_schooljaar,$notities) = mysqli_fetch_row($resultaat))
 {
 echo"<option value='$pop_id'>$hobbys $hobbys_tijdsduur $werk $Werk_tijdsduur $vrienden $huiswerktijd $vorig_schooljaar $notities</option>";

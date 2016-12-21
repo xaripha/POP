@@ -45,7 +45,7 @@ $mentor= mysqli_real_escape_string($mysql,$_POST["voornaamM"]);
 
 
 
-// Hier wordt het artikel toegevoegd aan de database
+// Hier wordt de persoon toegevoegd aan de database
 mysqli_query($mysql,"INSERT INTO gebruikers (voornaam,tussenvoegsel,achternaam,geboortedatum,gebruiker,wachtwoord,isMentor,isLeerling,isAdmin,actief,mentor) VALUES('$voornaam','$tussenvoegsel','$achternaam','$geboortedatum','$gebruiker','$wachtwoord','$isMentor','$isLeerling','$isAdmin','$actief',$mentor)") or die("De insertquery op de database is mislukt!".mysqli_error($mysql));	
 }
 $resultaat = mysqli_query($mysql,"SELECT gebruiker_id, voornaam FROM gebruikers where isMentor=1") or die(mysqli_error($mysql));
@@ -72,7 +72,7 @@ vul of het admin is in: <input type="checkbox"   value="1" name="isAdmin" /><br 
 Vul in of ze actief zijn: <input type="checkbox" value="1" name="actief" /><br /><br />
 vul de mentor in: <select name="voornaamM">  
 <?php
-// Hier worden alle verschillende categoriën uit de database getoond in de keuzelijst
+// Hier worden alle verschillende keuzes uit de database getoond in de keuzelijst
 while(list($gebruiker_id,$voornaamM) = mysqli_fetch_row($resultaat))
 {
 echo"<option value='$gebruiker_id'>$voornaamM</option>";
@@ -97,7 +97,7 @@ $resultaat2 = mysqli_query($mysql,"SELECT * FROM gebruikers WHERE voornaam = '$v
 // Verbinding weer sluiten
 mysqli_close($mysql) or die("Het verbreken van de verbinding met de MySQL-server is mislukt!");
 
-// Hier worden de opgehaalde artikelen getoond
+// Hier worden de opgehaalde mensen getoond
  while(list($gebruiker_id,$voornaam,$tussenvoegsel,$achternaam,$geboortedatum,$gebruiker,$wachtwoord,$isLeerling,$isMentor,$isAdmin,$actief,$mentor) = mysqli_fetch_row($resultaat2))
 	 {
 	  	echo"$voornaamM <br />";
