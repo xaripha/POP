@@ -34,7 +34,7 @@
 <tr><li><th>Cognitief</th></li></tr>
 <tr><td>In welke vakken ben je goed?</td> <td><input type="text" name="vakkengoed" /> </td></tr>
 <tr><td>In welke vakken ben je minder goed?</td> <td><input type="text" name="vakkenmindergoed" /></td></tr>
-<tr><th><li>Sociaal </li></th></tr>  <input type="radio" name="vriendenja" value="ja"> Ja
+<tr><th><li>Sociaal </li></th></tr>  
 <tr><td>Maak je makkelijk vrienden? </td><td><input type="radio" name="vriendenja" value="ja"> Ja <input type="radio" name="vriendennee" value="Nee">Nee </td></tr>
 <tr><td>Durf je jezelf te presenteren?</td><td> <input type="radio" name="presenterenja" value="Ja">Ja <input type="radio" name="presenterennee" value="Nee">Nee </td></tr>
 <tr><td>Durf je voor jezelf op te komen?</td><td><input type="radio" name="opkomenja" value="Ja">Ja <input type="radio" name="opkomennee" value="Nee">Nee </td></tr>
