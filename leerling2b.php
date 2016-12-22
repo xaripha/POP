@@ -34,11 +34,11 @@
 <tr><li><th>Cognitief</th></li></tr>
 <tr><td>In welke vakken ben je goed?</td> <td><input type="text" name="vakkengoed" /> </td></tr>
 <tr><td>In welke vakken ben je minder goed?</td> <td><input type="text" name="vakkenmindergoed" /></td></tr>
-<tr><th><li>Sociaal </li></th></tr>
-<tr><td>Maak je makkelijk vrienden? </td><td><input type="checkbox" name="vriendenja" value="Ja">Ja <input type="checkbox" name="vriendennee" value="Nee">Nee </td></tr>
-<tr><td>Durf je jezelf te presenteren?</td><td> <input type="checkbox" name="presenterenja" value="Ja">Ja <input type="checkbox" name="presenterennee" value="Nee">Nee </td></tr>
-<tr><td>Durf je voor jezelf op te komen?</td><td><input type="checkbox" name="opkomenja" value="Ja">Ja <input type="checkbox" name="opkomennee" value="Nee">Nee </td></tr>
-<tr><td>In hoeverre stel je vragen aan je docent?</td><td><input type="checkbox" name="vragenja" value="Ja">Ja <input type="checkbox" name="vragennee" value="Nee">Nee </td></tr>
+<tr><th><li>Sociaal </li></th></tr>  <input type="radio" name="vriendenja" value="ja"> Ja
+<tr><td>Maak je makkelijk vrienden? </td><td><input type="radio" name="vriendenja" value="ja"> Ja <input type="radio" name="vriendennee" value="Nee">Nee </td></tr>
+<tr><td>Durf je jezelf te presenteren?</td><td> <input type="radio" name="presenterenja" value="Ja">Ja <input type="radio" name="presenterennee" value="Nee">Nee </td></tr>
+<tr><td>Durf je voor jezelf op te komen?</td><td><input type="radio" name="opkomenja" value="Ja">Ja <input type="radio" name="opkomennee" value="Nee">Nee </td></tr>
+<tr><td>In hoeverre stel je vragen aan je docent?</td><td><input type="radio" name="vragenja" value="Ja">Ja <input type="radio" name="vragennee" value="Nee">Nee </td></tr>
 
 <tr><th><li>Studie</li></th></tr>
 <tr><td>Hoe is je werkhouding in de les? </td><td><input type="text" name="les " /></td></tr>
