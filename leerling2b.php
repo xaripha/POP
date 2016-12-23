@@ -4,8 +4,6 @@
  <form method="post">
  <head>
  <style> 
-
-
  </style>
   <title> POP </title> 
  <p id="title"> Formulier POP Persoonlijk Ontwikkelingsplan </p> 
@@ -35,10 +33,10 @@
 <tr><td>In welke vakken ben je goed?</td> <td><input type="text" name="vakkengoed" /> </td></tr>
 <tr><td>In welke vakken ben je minder goed?</td> <td><input type="text" name="vakkenmindergoed" /></td></tr>
 <tr><th><li>Sociaal </li></th></tr>  
-<tr><td>Maak je makkelijk vrienden? </td><td><input type="radio" name="vriendenja" value="ja"> Ja <input type="radio" name="vriendennee" value="Nee">Nee </td></tr>
-<tr><td>Durf je jezelf te presenteren?</td><td> <input type="radio" name="presenterenja" value="Ja">Ja <input type="radio" name="presenterennee" value="Nee">Nee </td></tr>
-<tr><td>Durf je voor jezelf op te komen?</td><td><input type="radio" name="opkomenja" value="Ja">Ja <input type="radio" name="opkomennee" value="Nee">Nee </td></tr>
-<tr><td>In hoeverre stel je vragen aan je docent?</td><td><input type="radio" name="vragenja" value="Ja">Ja <input type="radio" name="vragennee" value="Nee">Nee </td></tr>
+<tr><td>Maak je makkelijk vrienden? </td><td><input type="radio" name="gender" value="ja"> Ja <input type="radio" name="gender" value="Nee">Nee </td></tr>
+<tr><td>Durf je jezelf te presenteren?</td><td> <input type="radio" name="gender" value="Ja">Ja <input type="radio" name="gender" value="Nee">Nee </td></tr>
+<tr><td>Durf je voor jezelf op te komen?</td><td><input type="radio" name="gender" value="Ja">Ja <input type="radio" name="gender" value="Nee">Nee </td></tr>
+<tr><td>In hoeverre stel je vragen aan je docent?</td><td><input type="radio" name="gender" value="Ja">Ja <input type="radio" name="gender" value="Nee">Nee </td></tr>
 
 <tr><th><li>Studie</li></th></tr>
 <tr><td>Hoe is je werkhouding in de les? </td><td><input type="text" name="les " /></td></tr>
@@ -154,7 +152,7 @@ Lees de drie denkvoorkeuren door en tik de boxjes aan die volgens jou het meest 
 <tr><td><input type="checkbox" value="meedenken">kan goed meedenken met anderen/leeft zich in</td><td><input type="checkbox" value="kijk">heeft een ongewone kijk op problemen </td> <td></td></tr>
 <tr><td><input type="checkbox" value="details">let op details (inhoud) die anderen niet opvallen </td><td><input type="checkbox" value="implusief">werkt impulsief / lijkt chaotisch </td> <td></td></tr>
 </table></p>
-<p id="p2">De tabel waar je de meeste vinkjes hebt gezet is jouw denkvoorkeur.</br> Wat is jouw denkvoorkeur?</br>
+<p id="p2">Tel nu de vinkjes per tabel. De tabel waar je de meeste vinkjes hebt gezet is jouw denkvoorkeur.</br> Wat is jouw denkvoorkeur?</br>
 <input type="radio" name="gender" value="analytisch" checked> Analytisch denken<br>
 <input type="radio" name="gender" value="pragmatisch"> Pragmatisch denken<br>
 <input type="radio" name="gender" value="creatief"> Creatief denken </br>
