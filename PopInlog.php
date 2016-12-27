@@ -30,11 +30,11 @@ else{
 <head> POP  </head>
 <link rel="stylesheet" type="text/css" href="popmaak2.css">
 
-<form method="post">
-gebruikersnaam:<br>
-<input type="text" name="gebruikersnaam" size=" 20"/><br>
-wachtwoord:<br>
-<input type="text" name="wachtwoord" size=" 20"/><br></br>
+<form method="post"><br>
+Gebruikersnaam:<br>
+<input type="text" name="gebruikersnaam" size=" 30"/><br><br>
+Wachtwoord:<br>
+<input type="text" name="wachtwoord" size=" 30"/><br><br>
 <input type="submit" name="log_in" value= "verzenden"/> 
 
 </html>
